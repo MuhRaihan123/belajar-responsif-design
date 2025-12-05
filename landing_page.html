@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Responsive</title>
+<style>
+    /* Reset dan basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header / Hero */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.feature-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Tablet */
+@media (max-width: 768px) {
+    .feature-card {
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .feature-card {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Header / Hero Section -->
+<header class="hero">
+    <h1>Selamat Datang di Website Kami</h1>
+    <p>Membuat landing page sederhana yang responsive</p>
+    <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>Tentang Kami</h2>
+    <p>Kami menyediakan solusi web yang mudah diakses di semua perangkat.</p>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="feature-card">
+        <h3>Fitur 1</h3>
+        <p>Deskripsi fitur pertama.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Fitur 2</h3>
+        <p>Deskripsi fitur kedua.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Fitur 3</h3>
+        <p>Deskripsi fitur ketiga.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Landing Page Responsive</p>
+</footer>
+
+</body>
+</html>

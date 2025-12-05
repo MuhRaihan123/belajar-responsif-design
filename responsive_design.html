@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Example</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     font-size: 16px;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+/* Tablet */
+@media (max-width: 768px) {
+    .card {
+
+
+        width: 45%;
+    }
+    body {
+        font-size: 14px;
+    }
+    header {
+    background-color: #129191;
+    color: white;
+}
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    body {
+        font-size: 12px;
+    }
+    header {
+    background-color: #1b30a7;
+    color: white;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Responsive Design Demo</h1>
+</header>
+
+<main>
+  <div class="card">
+      <h2>Card 1</h2>
+      <img src="https://i0.wp.com/www.emporioarchitect.com/upload/portofolio/desain-rumah-modern-2-setengah-lantai-24131022-85791957131022093203-0.jpg" width="200" alt="Example Image">
+      <p>Contoh konten card yang responsif.</p>
+  </div>
+  <div class="card">
+      <h2>Card 2</h2>
+      <img src="https://i0.wp.com/www.emporioarchitect.com/upload/portofolio/desain-rumah-modern-2-setengah-lantai-24131022-85791957131022093203-0.jpg" width="200" alt="Example Image">
+      <p>Konten menyesuaikan ukuran layar.</p>
+  </div>
+  <div class="card">
+      <h2>Card 3</h2>
+      <img src="https://i0.wp.com/www.emporioarchitect.com/upload/portofolio/desain-rumah-modern-2-setengah-lantai-24131022-85791957131022093203-0.jpg" width="200" alt="Example Image">
+      <p>Layout fleksibel menggunakan flexbox.</p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Responsive Design Example</p>
+</footer>
+
+</body>
+</html>
